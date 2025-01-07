@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Live Weather info  </h1>
+    <div class="search-container">
+        <input type=" text" id="city-input" placeholder="Enter city name">
+        <button id="search-button">search</button>
+    </div>
+    <div class="weather_container" id = "Weather">
+        <h2 id="city"></h2>
+        <p id="date"></p>
+        <p><strong>Main Weather:</strong> <span id="main-weather"></span></p>
+        <p><strong>Condition:</strong> <span id="condition"></span></p>
+        <img id="icon" class="weather-icon" src="" alt="Weather Icon">
+        <p><strong>Temperature:</strong> <span id="temperature"></span>&deg;C</p>
+        <p><strong>Pressure:</strong> <span id="pressure"></span> HPa</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Wind:</strong> <span id="wind-speed"></span> m/s at <span id="wind-direction"></span>&deg;</p>
+    </div>
+    <script src="wscript.js"></script>
+    <footer class="footer">
+        <p>Data sourced from <a href="https://openweathermap.org/" target="_blank">OPEN-WEATHER MAP</a>. Copyright Piyush Rauniyar, All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
