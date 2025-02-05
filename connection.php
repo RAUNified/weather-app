@@ -27,7 +27,7 @@ $conn->query("DELETE FROM weather WHERE TIMESTAMPDIFF(HOUR, date_time, NOW()) > 
 $checkRecentData = "SELECT * FROM weather WHERE city_name = '$cityName' AND TIMESTAMPDIFF(HOUR, date_time, NOW()) <= 2";
 $result = $conn->query($checkRecentData);
 if ($result->num_rows == 0) {
-    $apiKey = "eba8b464439410c5bc116058cb6cefd8";
+    $apiKey = "your api key here";
     $url = "https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey&units=metric";
 
     $response = @file_get_contents($url);
