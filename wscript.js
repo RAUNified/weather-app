@@ -1,4 +1,4 @@
-const API_KEY = 'eba8b464439410c5bc116058cb6cefd8';
+const API_KEY = 'your api key here';
 const DEFAULT_CITY = 'Biratnagar';
 
 async function fetchWeather(city) {
